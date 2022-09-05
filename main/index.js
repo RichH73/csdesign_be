@@ -1,5 +1,4 @@
 module.exports = (req, res) => {
-    console.log('this thing')
-
+    console.log(req.body)
     return res.status(200).send('hello world...')
 }
