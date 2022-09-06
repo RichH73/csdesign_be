@@ -32,7 +32,7 @@ const main = require("./main");
 //   }
 //   );
   
-var whitelist = ["192.168.1.48:4000", "https://herpbook.com", 'http://localhost:4000', 'http://192.168.0.2:4000', 'http://localhost:5000'];
+var whitelist = ['http://localhost:4000', 'http://192.168.0.2:4000'];
 var corsOptions = {
   origin: whitelist,
   optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
