@@ -2,35 +2,8 @@ const express = require("express");
 const app = express();
 const cors = require("cors");
 const bodyParser = require("body-parser");
-// const mongoose = require("mongoose");
-// mongoose.set('useCreateIndex', true);
 const main = require("./main");
-// require("dotenv").config({ path: "/etc/herpSite.env" });
-// const { DB_USER, DB_PASSWORD, DB_HOST, DB_PORT } = process.env;
 
-
-
-
-
-
-
-
-
-// mongoose.connect(
-//   `mongodb://${DB_USER}:${DB_PASSWORD}@${DB_HOST}:${DB_PORT}/herpbook`,  
-//   {
-//     useNewUrlParser: true,
-//     useCreateIndex: true,
-//     useFindAndModify: false,
-//     useUnifiedTopology: true,
-//     autoIndex: false
-//   },
-//   function(err){
-//     if(err) console.log('An error has occured', err)
-//     console.log('Database Connected')
-
-//   }
-//   );
   
 var whitelist = ['http://localhost:4000', 'http://192.168.0.2:4000'];
 var corsOptions = {
