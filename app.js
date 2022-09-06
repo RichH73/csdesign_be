@@ -40,7 +40,6 @@ var corsOptions = {
 
 app.use(cors(corsOptions));
 
-
 app.use(bodyParser.json({
   type: 'application/json',
   limit: "40mb",
