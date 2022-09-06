@@ -1,4 +1,6 @@
 module.exports = (req, res) => {
+    const { name, email, number, message } = req.body
     console.log(req.body)
-    return res.status(200).send('hello world...')
+    const replyMessage = `Your form was successfully submitted. Form infomation , name, ${name} email, ${email} number, ${number} message, ${message}`
+    return res.status(200).send(replyMessage)
 }
